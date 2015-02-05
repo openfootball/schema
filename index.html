@@ -1,0 +1,57 @@
+---
+layout: default
+title: Tables
+---
+
+{% for schema in site.data.database.schemas %}
+  <a href="#{{schema.name}}">{{ schema.name }}</a> • 
+{% endfor %}
+
+
+{% for schema in site.data.database.schemas %}
+<h3>{{ schema.name }} Tables</h3>
+  {% for table in schema.tables %}
+     <a href="#{{table.name}}">{{ table.name }}</a>  •
+  {% endfor %}
+{% endfor %}
+
+<!-- todo/fix: do not include bullet for first (or last) table -->
+
+
+
+{% for schema in site.data.database.schemas %}
+<a name="{{ schema.name }}"></a><h2>{{ schema.name }} Tables</h2>
+  {% for table in schema.tables %}
+     <a href="#{{table.name}}">{{ table.name }}</a>  •
+  {% endfor %}
+
+
+{% for table in schema.tables %}
+  
+<a name="{{table.name}}"></a><h3>Table {{ table.name }}</h3>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th></th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  {% for column in table.columns %}
+    <tr>
+      <td>{{ column.name }}</td>
+      <td>{{ column.type }}</td>
+      <td>{% if column.null %}
+            NOT NULL
+          {% endif %}
+      </td>
+      <td>{{ column.default }}</td>
+      <td><!-- comments - to be done --></td>
+    </tr>
+  {% endfor %}
+</table>
+
+{% endfor %}
+{% endfor %}
+

@@ -1,0 +1,2293 @@
+{
+  "schemas": [
+    {
+      "name": "football",
+      "tables": [
+        {
+          "name": "alltime_standing_entries",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "alltime_standing_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "team_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "pos",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "played",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "won",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "lost",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "drawn",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "goals_for",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "goals_against",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "pts",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "recs",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "comments",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "alltime_standings",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "title",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "assocs",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "title",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "since",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "web",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "country_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "national",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "continental",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "intercontinental",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "assocs_assocs",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "assoc1_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "assoc2_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "badges",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "team_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "league_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "season_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "title",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "event_standing_entries",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "event_standing_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "team_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "pos",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "played",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "won",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "lost",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "drawn",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "goals_for",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "goals_against",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "pts",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "comments",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "event_standings",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "event_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "events",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "league_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "season_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "start_at",
+              "type": "date",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "end_at",
+              "type": "date",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "team3",
+              "type": "boolean",
+              "default": "t",
+              "null": false
+            },
+            {
+              "name": "sources",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "config",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "events_grounds",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "event_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "ground_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "events_teams",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "event_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "team_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "games",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "round_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "pos",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "group_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "team1_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "team2_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "play_at",
+              "type": "datetime",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "postponed",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "play_at_v2",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "play_at_v3",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "ground_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "city_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "knockout",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "home",
+              "type": "boolean",
+              "default": "t",
+              "null": false
+            },
+            {
+              "name": "score1",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "score2",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "score1et",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "score2et",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "score1p",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "score2p",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "score1i",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "score2i",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "score1ii",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "score2ii",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "next_game_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "prev_game_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "winner",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "winner90",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "goals",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "person_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "game_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "team_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "minute",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "offset",
+              "type": "integer",
+              "default": "0",
+              "null": false
+            },
+            {
+              "name": "score1",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "score2",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "penalty",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "owngoal",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "grounds",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "title",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "synonyms",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "country_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "city_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "since",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "capacity",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "address",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "group_standing_entries",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "group_standing_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "team_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "pos",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "played",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "won",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "lost",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "drawn",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "goals_for",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "goals_against",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "pts",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "comments",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "group_standings",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "group_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "groups",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "event_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "title",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "pos",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "groups_teams",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "group_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "team_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "leagues",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "title",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "country_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "club",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "persons",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "synonyms",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "code",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "born_at",
+              "type": "date",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "city_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "region_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "country_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "nationality_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "rosters",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "person_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "team_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "event_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "pos",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "rounds",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "event_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "title",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "title2",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "pos",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "knockout",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "start_at",
+              "type": "date",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "end_at",
+              "type": "date",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "auto",
+              "type": "boolean",
+              "default": "t",
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "seasons",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "title",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "teams",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "title",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "title2",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "code",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "synonyms",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "country_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "city_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "club",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "since",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "address",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "web",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "assoc_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "national",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "world",
+      "tables": [
+        {
+          "name": "cities",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "place_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "code",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "alt_names",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "country_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "region_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "city_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "pop",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "popm",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "area",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "m",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "c",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "d",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "continents",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "slug",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "place_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "alt_names",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "countries",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "slug",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "place_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "code",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "alt_names",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "hist_names",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "pop",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "area",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "continent_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "country_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "s",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "c",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "d",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "m",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "motor",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "alpha2",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "alpha3",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "num",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "fifa",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "ioc",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "fips",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "net",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "wikipedia",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "country_codes",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "kind",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "country_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            }
+          ]
+        },
+        {
+          "name": "langs",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "names",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "place_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "lang",
+              "type": "varchar",
+              "default": "en",
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "places",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "kind",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "lat",
+              "type": "float",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "lng",
+              "type": "float",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "regions",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "place_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "code",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "abbr",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "iso",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "nuts",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "alt_names",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "country_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "pop",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "area",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "usages",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "country_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "lang_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "official",
+              "type": "boolean",
+              "default": "t",
+              "null": false
+            },
+            {
+              "name": "minor",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "percent",
+              "type": "float",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "support",
+      "tables": [
+        {
+          "name": "logs",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "msg",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "level",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "app",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "tag",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "pid",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "tid",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "ts",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "props",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "value",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "kind",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "taggings",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "tag_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "taggable_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "taggable_type",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "tags",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "slug",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "grade",
+              "type": "integer",
+              "default": "1",
+              "null": false
+            },
+            {
+              "name": "parent_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

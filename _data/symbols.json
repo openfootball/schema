@@ -1,0 +1,1208 @@
+[
+  {
+    "name": "A",
+    "tables": [
+      "alltime_standing_entries",
+      "alltime_standings",
+      "assocs",
+      "assocs_assocs"
+    ],
+    "columns": [
+      {
+        "name": "abbr",
+        "tables": [
+          "regions"
+        ]
+      },
+      {
+        "name": "address",
+        "tables": [
+          "grounds",
+          "teams"
+        ]
+      },
+      {
+        "name": "alltime_standing_id",
+        "tables": [
+          "alltime_standing_entries"
+        ]
+      },
+      {
+        "name": "alpha2",
+        "tables": [
+          "countries"
+        ]
+      },
+      {
+        "name": "alpha3",
+        "tables": [
+          "countries"
+        ]
+      },
+      {
+        "name": "alt_names",
+        "tables": [
+          "cities",
+          "continents",
+          "countries",
+          "regions"
+        ]
+      },
+      {
+        "name": "app",
+        "tables": [
+          "logs"
+        ]
+      },
+      {
+        "name": "area",
+        "tables": [
+          "cities",
+          "countries",
+          "regions"
+        ]
+      },
+      {
+        "name": "assoc1_id",
+        "tables": [
+          "assocs_assocs"
+        ]
+      },
+      {
+        "name": "assoc2_id",
+        "tables": [
+          "assocs_assocs"
+        ]
+      },
+      {
+        "name": "assoc_id",
+        "tables": [
+          "teams"
+        ]
+      },
+      {
+        "name": "auto",
+        "tables": [
+          "rounds"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "B",
+    "tables": [
+      "badges"
+    ],
+    "columns": [
+      {
+        "name": "born_at",
+        "tables": [
+          "persons"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "C",
+    "tables": [
+      "cities",
+      "continents",
+      "countries",
+      "country_codes"
+    ],
+    "columns": [
+      {
+        "name": "c",
+        "tables": [
+          "cities",
+          "countries"
+        ]
+      },
+      {
+        "name": "capacity",
+        "tables": [
+          "grounds"
+        ]
+      },
+      {
+        "name": "city_id",
+        "tables": [
+          "cities",
+          "games",
+          "grounds",
+          "persons",
+          "teams"
+        ]
+      },
+      {
+        "name": "club",
+        "tables": [
+          "leagues",
+          "teams"
+        ]
+      },
+      {
+        "name": "code",
+        "tables": [
+          "cities",
+          "countries",
+          "persons",
+          "regions",
+          "teams"
+        ]
+      },
+      {
+        "name": "comments",
+        "tables": [
+          "alltime_standing_entries",
+          "event_standing_entries",
+          "group_standing_entries"
+        ]
+      },
+      {
+        "name": "config",
+        "tables": [
+          "events"
+        ]
+      },
+      {
+        "name": "continent_id",
+        "tables": [
+          "countries"
+        ]
+      },
+      {
+        "name": "continental",
+        "tables": [
+          "assocs"
+        ]
+      },
+      {
+        "name": "country_id",
+        "tables": [
+          "assocs",
+          "cities",
+          "countries",
+          "country_codes",
+          "grounds",
+          "leagues",
+          "persons",
+          "regions",
+          "teams",
+          "usages"
+        ]
+      },
+      {
+        "name": "created_at",
+        "tables": [
+          "alltime_standing_entries",
+          "alltime_standings",
+          "assocs",
+          "assocs_assocs",
+          "badges",
+          "cities",
+          "continents",
+          "countries",
+          "event_standing_entries",
+          "event_standings",
+          "events",
+          "events_grounds",
+          "events_teams",
+          "games",
+          "goals",
+          "grounds",
+          "group_standing_entries",
+          "group_standings",
+          "groups",
+          "groups_teams",
+          "langs",
+          "leagues",
+          "logs",
+          "names",
+          "persons",
+          "places",
+          "props",
+          "regions",
+          "rosters",
+          "rounds",
+          "seasons",
+          "taggings",
+          "tags",
+          "teams",
+          "usages"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "D",
+    "tables": [
+
+    ],
+    "columns": [
+      {
+        "name": "d",
+        "tables": [
+          "cities",
+          "countries"
+        ]
+      },
+      {
+        "name": "drawn",
+        "tables": [
+          "alltime_standing_entries",
+          "event_standing_entries",
+          "group_standing_entries"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "E",
+    "tables": [
+      "event_standing_entries",
+      "event_standings",
+      "events",
+      "events_grounds",
+      "events_teams"
+    ],
+    "columns": [
+      {
+        "name": "end_at",
+        "tables": [
+          "events",
+          "rounds"
+        ]
+      },
+      {
+        "name": "event_id",
+        "tables": [
+          "event_standings",
+          "events_grounds",
+          "events_teams",
+          "groups",
+          "rosters",
+          "rounds"
+        ]
+      },
+      {
+        "name": "event_standing_id",
+        "tables": [
+          "event_standing_entries"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "F",
+    "tables": [
+
+    ],
+    "columns": [
+      {
+        "name": "fifa",
+        "tables": [
+          "countries"
+        ]
+      },
+      {
+        "name": "fips",
+        "tables": [
+          "countries"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "G",
+    "tables": [
+      "games",
+      "goals",
+      "grounds",
+      "group_standing_entries",
+      "group_standings",
+      "groups",
+      "groups_teams"
+    ],
+    "columns": [
+      {
+        "name": "game_id",
+        "tables": [
+          "goals"
+        ]
+      },
+      {
+        "name": "goals_against",
+        "tables": [
+          "alltime_standing_entries",
+          "event_standing_entries",
+          "group_standing_entries"
+        ]
+      },
+      {
+        "name": "goals_for",
+        "tables": [
+          "alltime_standing_entries",
+          "event_standing_entries",
+          "group_standing_entries"
+        ]
+      },
+      {
+        "name": "grade",
+        "tables": [
+          "tags"
+        ]
+      },
+      {
+        "name": "ground_id",
+        "tables": [
+          "events_grounds",
+          "games"
+        ]
+      },
+      {
+        "name": "group_id",
+        "tables": [
+          "games",
+          "group_standings",
+          "groups_teams"
+        ]
+      },
+      {
+        "name": "group_standing_id",
+        "tables": [
+          "group_standing_entries"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "H",
+    "tables": [
+
+    ],
+    "columns": [
+      {
+        "name": "hist_names",
+        "tables": [
+          "countries"
+        ]
+      },
+      {
+        "name": "home",
+        "tables": [
+          "games"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "I",
+    "tables": [
+
+    ],
+    "columns": [
+      {
+        "name": "id",
+        "tables": [
+          "alltime_standing_entries",
+          "alltime_standings",
+          "assocs",
+          "assocs_assocs",
+          "badges",
+          "cities",
+          "continents",
+          "countries",
+          "country_codes",
+          "event_standing_entries",
+          "event_standings",
+          "events",
+          "events_grounds",
+          "events_teams",
+          "games",
+          "goals",
+          "grounds",
+          "group_standing_entries",
+          "group_standings",
+          "groups",
+          "groups_teams",
+          "langs",
+          "leagues",
+          "logs",
+          "names",
+          "persons",
+          "places",
+          "props",
+          "regions",
+          "rosters",
+          "rounds",
+          "seasons",
+          "taggings",
+          "tags",
+          "teams",
+          "usages"
+        ]
+      },
+      {
+        "name": "intercontinental",
+        "tables": [
+          "assocs"
+        ]
+      },
+      {
+        "name": "ioc",
+        "tables": [
+          "countries"
+        ]
+      },
+      {
+        "name": "iso",
+        "tables": [
+          "regions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "J",
+    "tables": [
+
+    ],
+    "columns": [
+
+    ]
+  },
+  {
+    "name": "K",
+    "tables": [
+
+    ],
+    "columns": [
+      {
+        "name": "key",
+        "tables": [
+          "alltime_standings",
+          "assocs",
+          "cities",
+          "continents",
+          "countries",
+          "events",
+          "games",
+          "grounds",
+          "langs",
+          "leagues",
+          "persons",
+          "props",
+          "regions",
+          "seasons",
+          "tags",
+          "teams"
+        ]
+      },
+      {
+        "name": "kind",
+        "tables": [
+          "country_codes",
+          "places",
+          "props"
+        ]
+      },
+      {
+        "name": "knockout",
+        "tables": [
+          "games",
+          "rounds"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "L",
+    "tables": [
+      "langs",
+      "leagues",
+      "logs"
+    ],
+    "columns": [
+      {
+        "name": "lang",
+        "tables": [
+          "names"
+        ]
+      },
+      {
+        "name": "lang_id",
+        "tables": [
+          "usages"
+        ]
+      },
+      {
+        "name": "lat",
+        "tables": [
+          "places"
+        ]
+      },
+      {
+        "name": "league_id",
+        "tables": [
+          "badges",
+          "events"
+        ]
+      },
+      {
+        "name": "level",
+        "tables": [
+          "logs"
+        ]
+      },
+      {
+        "name": "lng",
+        "tables": [
+          "places"
+        ]
+      },
+      {
+        "name": "lost",
+        "tables": [
+          "alltime_standing_entries",
+          "event_standing_entries",
+          "group_standing_entries"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M",
+    "tables": [
+
+    ],
+    "columns": [
+      {
+        "name": "m",
+        "tables": [
+          "cities",
+          "countries"
+        ]
+      },
+      {
+        "name": "minor",
+        "tables": [
+          "usages"
+        ]
+      },
+      {
+        "name": "minute",
+        "tables": [
+          "goals"
+        ]
+      },
+      {
+        "name": "motor",
+        "tables": [
+          "countries"
+        ]
+      },
+      {
+        "name": "msg",
+        "tables": [
+          "logs"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "N",
+    "tables": [
+      "names"
+    ],
+    "columns": [
+      {
+        "name": "name",
+        "tables": [
+          "cities",
+          "continents",
+          "countries",
+          "country_codes",
+          "langs",
+          "names",
+          "persons",
+          "places",
+          "regions",
+          "tags"
+        ]
+      },
+      {
+        "name": "national",
+        "tables": [
+          "assocs",
+          "teams"
+        ]
+      },
+      {
+        "name": "nationality_id",
+        "tables": [
+          "persons"
+        ]
+      },
+      {
+        "name": "net",
+        "tables": [
+          "countries"
+        ]
+      },
+      {
+        "name": "next_game_id",
+        "tables": [
+          "games"
+        ]
+      },
+      {
+        "name": "num",
+        "tables": [
+          "countries"
+        ]
+      },
+      {
+        "name": "nuts",
+        "tables": [
+          "regions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "O",
+    "tables": [
+
+    ],
+    "columns": [
+      {
+        "name": "official",
+        "tables": [
+          "usages"
+        ]
+      },
+      {
+        "name": "offset",
+        "tables": [
+          "goals"
+        ]
+      },
+      {
+        "name": "owngoal",
+        "tables": [
+          "goals"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "P",
+    "tables": [
+      "persons",
+      "places",
+      "props"
+    ],
+    "columns": [
+      {
+        "name": "parent_id",
+        "tables": [
+          "tags"
+        ]
+      },
+      {
+        "name": "penalty",
+        "tables": [
+          "goals"
+        ]
+      },
+      {
+        "name": "percent",
+        "tables": [
+          "usages"
+        ]
+      },
+      {
+        "name": "person_id",
+        "tables": [
+          "goals",
+          "rosters"
+        ]
+      },
+      {
+        "name": "pid",
+        "tables": [
+          "logs"
+        ]
+      },
+      {
+        "name": "place_id",
+        "tables": [
+          "cities",
+          "continents",
+          "countries",
+          "names",
+          "regions"
+        ]
+      },
+      {
+        "name": "play_at",
+        "tables": [
+          "games"
+        ]
+      },
+      {
+        "name": "play_at_v2",
+        "tables": [
+          "games"
+        ]
+      },
+      {
+        "name": "play_at_v3",
+        "tables": [
+          "games"
+        ]
+      },
+      {
+        "name": "played",
+        "tables": [
+          "alltime_standing_entries",
+          "event_standing_entries",
+          "group_standing_entries"
+        ]
+      },
+      {
+        "name": "pop",
+        "tables": [
+          "cities",
+          "countries",
+          "regions"
+        ]
+      },
+      {
+        "name": "popm",
+        "tables": [
+          "cities"
+        ]
+      },
+      {
+        "name": "pos",
+        "tables": [
+          "alltime_standing_entries",
+          "event_standing_entries",
+          "games",
+          "group_standing_entries",
+          "groups",
+          "rosters",
+          "rounds"
+        ]
+      },
+      {
+        "name": "postponed",
+        "tables": [
+          "games"
+        ]
+      },
+      {
+        "name": "prev_game_id",
+        "tables": [
+          "games"
+        ]
+      },
+      {
+        "name": "pts",
+        "tables": [
+          "alltime_standing_entries",
+          "event_standing_entries",
+          "group_standing_entries"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Q",
+    "tables": [
+
+    ],
+    "columns": [
+
+    ]
+  },
+  {
+    "name": "R",
+    "tables": [
+      "regions",
+      "rosters",
+      "rounds"
+    ],
+    "columns": [
+      {
+        "name": "recs",
+        "tables": [
+          "alltime_standing_entries"
+        ]
+      },
+      {
+        "name": "region_id",
+        "tables": [
+          "cities",
+          "persons"
+        ]
+      },
+      {
+        "name": "round_id",
+        "tables": [
+          "games"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "S",
+    "tables": [
+      "seasons"
+    ],
+    "columns": [
+      {
+        "name": "s",
+        "tables": [
+          "countries"
+        ]
+      },
+      {
+        "name": "score1",
+        "tables": [
+          "games",
+          "goals"
+        ]
+      },
+      {
+        "name": "score1et",
+        "tables": [
+          "games"
+        ]
+      },
+      {
+        "name": "score1i",
+        "tables": [
+          "games"
+        ]
+      },
+      {
+        "name": "score1ii",
+        "tables": [
+          "games"
+        ]
+      },
+      {
+        "name": "score1p",
+        "tables": [
+          "games"
+        ]
+      },
+      {
+        "name": "score2",
+        "tables": [
+          "games",
+          "goals"
+        ]
+      },
+      {
+        "name": "score2et",
+        "tables": [
+          "games"
+        ]
+      },
+      {
+        "name": "score2i",
+        "tables": [
+          "games"
+        ]
+      },
+      {
+        "name": "score2ii",
+        "tables": [
+          "games"
+        ]
+      },
+      {
+        "name": "score2p",
+        "tables": [
+          "games"
+        ]
+      },
+      {
+        "name": "season_id",
+        "tables": [
+          "badges",
+          "events"
+        ]
+      },
+      {
+        "name": "since",
+        "tables": [
+          "assocs",
+          "grounds",
+          "teams"
+        ]
+      },
+      {
+        "name": "slug",
+        "tables": [
+          "continents",
+          "countries",
+          "tags"
+        ]
+      },
+      {
+        "name": "sources",
+        "tables": [
+          "events"
+        ]
+      },
+      {
+        "name": "start_at",
+        "tables": [
+          "events",
+          "rounds"
+        ]
+      },
+      {
+        "name": "synonyms",
+        "tables": [
+          "grounds",
+          "persons",
+          "teams"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "T",
+    "tables": [
+      "taggings",
+      "tags",
+      "teams"
+    ],
+    "columns": [
+      {
+        "name": "tag",
+        "tables": [
+          "logs"
+        ]
+      },
+      {
+        "name": "tag_id",
+        "tables": [
+          "taggings"
+        ]
+      },
+      {
+        "name": "taggable_id",
+        "tables": [
+          "taggings"
+        ]
+      },
+      {
+        "name": "taggable_type",
+        "tables": [
+          "taggings"
+        ]
+      },
+      {
+        "name": "team1_id",
+        "tables": [
+          "games"
+        ]
+      },
+      {
+        "name": "team2_id",
+        "tables": [
+          "games"
+        ]
+      },
+      {
+        "name": "team3",
+        "tables": [
+          "events"
+        ]
+      },
+      {
+        "name": "team_id",
+        "tables": [
+          "alltime_standing_entries",
+          "badges",
+          "event_standing_entries",
+          "events_teams",
+          "goals",
+          "group_standing_entries",
+          "groups_teams",
+          "rosters"
+        ]
+      },
+      {
+        "name": "tid",
+        "tables": [
+          "logs"
+        ]
+      },
+      {
+        "name": "title",
+        "tables": [
+          "alltime_standings",
+          "assocs",
+          "badges",
+          "grounds",
+          "groups",
+          "leagues",
+          "rounds",
+          "seasons",
+          "teams"
+        ]
+      },
+      {
+        "name": "title2",
+        "tables": [
+          "rounds",
+          "teams"
+        ]
+      },
+      {
+        "name": "ts",
+        "tables": [
+          "logs"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "U",
+    "tables": [
+      "usages"
+    ],
+    "columns": [
+      {
+        "name": "updated_at",
+        "tables": [
+          "alltime_standing_entries",
+          "alltime_standings",
+          "assocs",
+          "assocs_assocs",
+          "badges",
+          "cities",
+          "continents",
+          "countries",
+          "event_standing_entries",
+          "event_standings",
+          "events",
+          "events_grounds",
+          "events_teams",
+          "games",
+          "goals",
+          "grounds",
+          "group_standing_entries",
+          "group_standings",
+          "groups",
+          "groups_teams",
+          "langs",
+          "leagues",
+          "logs",
+          "names",
+          "persons",
+          "places",
+          "props",
+          "regions",
+          "rosters",
+          "rounds",
+          "seasons",
+          "taggings",
+          "tags",
+          "teams",
+          "usages"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "V",
+    "tables": [
+
+    ],
+    "columns": [
+      {
+        "name": "value",
+        "tables": [
+          "props"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "W",
+    "tables": [
+
+    ],
+    "columns": [
+      {
+        "name": "web",
+        "tables": [
+          "assocs",
+          "teams"
+        ]
+      },
+      {
+        "name": "wikipedia",
+        "tables": [
+          "countries"
+        ]
+      },
+      {
+        "name": "winner",
+        "tables": [
+          "games"
+        ]
+      },
+      {
+        "name": "winner90",
+        "tables": [
+          "games"
+        ]
+      },
+      {
+        "name": "won",
+        "tables": [
+          "alltime_standing_entries",
+          "event_standing_entries",
+          "group_standing_entries"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "X",
+    "tables": [
+
+    ],
+    "columns": [
+
+    ]
+  },
+  {
+    "name": "Y",
+    "tables": [
+
+    ],
+    "columns": [
+
+    ]
+  },
+  {
+    "name": "Z",
+    "tables": [
+
+    ],
+    "columns": [
+
+    ]
+  }
+]
