@@ -1,0 +1,24 @@
+###########
+# site.url, site.title
+
+title: 'football.db Schema Docu'
+url:   'http://openfootball.github.io/schema'
+
+
+########
+# more settings
+
+markdown: kramdown
+
+sass:
+  sass_dir: css
+  style:    expanded
+
+
+exclude:
+- README.md
+
+
+safe: true
+lsi: false
+
