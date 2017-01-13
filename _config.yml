@@ -1,9 +1,4 @@
-###########
-# site.url, site.title
-
 title: 'football.db Schema Docu'
-url:   'http://openfootball.github.io/schema'
-
 
 ########
 # more settings
@@ -17,6 +12,7 @@ sass:
 
 exclude:
 - README.md
+- LICENSE.md
 
 
 safe: true
